@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ms">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261006-04-b082f3f","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Sarabun":"YAFdJssSnME,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffdf1">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <title>Asas Membaca Iqra'</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800&amp;family=Baloo+2:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #24544b;
+      --garden: #79cf74;
+      --sky: #bfeeff;
+      --cream: #fffdf1;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      margin: 0;
+      overflow-x: hidden;
+      font-family: "Alegreya Sans", sans-serif;
+      color: var(--ink);
+    }
+
+    .garden-page {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background: linear-gradient(to bottom, #bfeeff 0%, #e0f8ff 55%, #a8df83 55%, #78c971 100%);
+    }
+
+    .garden-page::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      opacity: .28;
+      background-image: radial-gradient(#ffffff 1.4px, transparent 1.4px);
+      background-size: 19px 19px;
+      pointer-events: none;
+    }
+
+    .main-shell {
+      width: 100%;
+      max-width: 590px;
+      margin: 0 auto;
+      padding: 25px 18px 42px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .brand-logo {
+      width: min(224px, 64vw);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      filter: drop-shadow(0 6px 0 rgba(40, 116, 80, .14));
+      animation: floaty 3.2s ease-in-out infinite;
+    }
+
+    .slogan {
+      font-family: "Baloo 2", cursive;
+      text-shadow: 0 3px 0 rgba(255,255,255,.85);
+    }
+
+    .learning-card {
+      border: 3px solid rgba(255, 255, 255, .92);
+      border-radius: 30px;
+      box-shadow: 0 11px 0 rgba(43, 111, 62, .18), 0 18px 25px rgba(53, 126, 79, .15);
+      backdrop-filter: blur(5px);
+    }
+
+    .level-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .level-button {
+      min-height: 92px;
+      border: 0;
+      border-radius: 23px;
+      box-shadow: inset 0 2px 0 rgba(255,255,255,.55), 0 7px 0 rgba(0,0,0,.16);
+      transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+      font-family: "Baloo 2", cursive;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .level-button::after {
+      content: "";
+      position: absolute;
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.25);
+      right: -25px;
+      top: -28px;
+    }
+
+    .level-button:hover,
+    .level-button:focus-visible {
+      transform: translateY(-5px) rotate(-1deg);
+      filter: brightness(1.05);
+      outline: 4px solid #ffffff;
+      outline-offset: 3px;
+    }
+
+    .level-button:disabled {
+      cursor: not-allowed;
+      filter: saturate(.62);
+      opacity: .78;
+    }
+
+    .level-button:active,
+    .level-button.is-selected {
+      transform: translateY(5px);
+      box-shadow: inset 0 2px 0 rgba(0,0,0,.08), 0 2px 0 rgba(0,0,0,.16);
+    }
+
+    .level-button.is-selected {
+      outline: 4px solid #fff9b4;
+      outline-offset: 2px;
+    }
+
+    .button-number {
+      width: 31px;
+      height: 31px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,.92);
+      color: #27624f;
+      border-radius: 50%;
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 2px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .button-label {
+      display: block;
+      position: relative;
+      z-index: 1;
+      line-height: 1;
+    }
+
+    .message-card {
+      border: 2px dashed rgba(55, 122, 78, .3);
+      border-radius: 19px;
+      min-height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      animation: pop-in .3s ease both;
+    }
+
+    .message-card[hidden] { display: none; }
+
+    .sun {
+      position: absolute;
+      width: 76px;
+      height: 76px;
+      top: 19px;
+      right: max(3%, calc((100% - 650px) / 2));
+      border-radius: 50%;
+      background: #ffd95a;
+      border: 4px solid #ffca3f;
+      box-shadow: 0 0 0 9px rgba(255, 227, 112, .34);
+      z-index: 0;
+    }
+
+    .sun::before, .sun::after {
+      content: "";
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      background: #a66535;
+      border-radius: 50%;
+      top: 28px;
+    }
+
+    .sun::before { left: 20px; }
+    .sun::after { right: 20px; }
+
+    .sun-smile {
+      position: absolute;
+      left: 27px;
+      top: 39px;
+      width: 18px;
+      height: 9px;
+      border-bottom: 3px solid #a66535;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .cloud {
+      position: absolute;
+      border-radius: 50px;
+      background: rgba(255,255,255,.9);
+      height: 20px;
+      width: 68px;
+      z-index: 0;
+      animation: drift 11s ease-in-out infinite alternate;
+    }
+
+    .cloud::before, .cloud::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      background: inherit;
+      border-radius: 50%;
+    }
+
+    .cloud::before { width: 30px; height: 30px; left: 12px; }
+    .cloud::after { width: 23px; height: 23px; left: 36px; }
+
+    .cloud-one { left: 6%; top: 115px; }
+    .cloud-two { right: 8%; top: 203px; transform: scale(.72); animation-delay: -5s; }
+
+    .bush {
+      position: absolute;
+      bottom: 0;
+      width: 170px;
+      height: 100px;
+      border-radius: 100% 100% 0 0;
+      background: #59b866;
+      z-index: 1;
+    }
+
+    .bush-left { left: -60px; }
+    .bush-right { right: -70px; background: #67bd67; }
+
+    .flower {
+      position: absolute;
+      z-index: 1;
+      bottom: 23px;
+      font-size: 2rem;
+      filter: drop-shadow(0 2px 0 rgba(53,112,58,.13));
+    }
+
+    .flower-one { left: 8%; }
+    .flower-two { right: 8%; bottom: 48px; font-size: 1.65rem; }
+    .bird { position: absolute; top: 160px; left: 10%; color: #5087bd; z-index: 1; transform: rotate(-8deg); }
+    .rabbit { position: absolute; right: 7%; bottom: 20px; z-index: 2; font-size: 2.7rem; transform: rotate(-5deg); }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+
+    @keyframes drift {
+      from { transform: translateX(-8px); }
+      to { transform: translateX(14px); }
+    }
+
+    @keyframes pop-in {
+      from { opacity: 0; transform: scale(.92) translateY(6px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    @media (min-width: 540px) {
+      .main-shell { padding-top: 32px; }
+      .level-grid { gap: 17px; }
+      .level-button { min-height: 102px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="theme-color" content="#ffffff">
+ </head>
+ <body data-template-id="__page-root">
+  <div class="garden-page">
+   <div class="sun" aria-hidden="true"><span class="sun-smile"></span>
+   </div>
+   <div class="cloud cloud-one" aria-hidden="true"></div>
+   <div class="cloud cloud-two" aria-hidden="true"></div><i class="bird" data-lucide="bird" aria-hidden="true"></i>
+   <main class="main-shell" aria-labelledby="page-slogan">
+    <header class="text-center mb-6">
+     <img data-template-id="main-logo" loading="lazy" class="canva-image brand-logo">
+     <h1 data-template-id="page-slogan" id="page-slogan" class="canva-text slogan mt-2"></h1>
+    </header>
+    <section data-template-id="level-panel" class="canva-panel learning-card bg-[#fffdf1e8] p-5 sm:p-6" aria-labelledby="level-heading">
+     <div class="text-center mb-5">
+      <h2 data-template-id="level-heading" id="level-heading" class="canva-text slogan"></h2>
+      <p data-template-id="helper-text" class="canva-text mt-1 font-medium"></p>
+     </div>
+     <nav class="level-grid" aria-label="Pilihan tahap Iqra">
+      <button data-template-id="iqra-1-button" class="canva-button level-button bg-[#ff9a53] text-white" type="button" data-level="1" aria-controls="iqra-1-message"> <span class="button-number">1</span><span class="button-label" data-template-id="iqra-button-label"></span> </button> <button data-template-id="iqra-2-button" class="canva-button level-button bg-[#f46973] text-white" type="button" data-level="2" aria-controls="iqra-2-message"> <span class="button-number">2</span><span data-template-id="iqra-2-label" class="button-label"></span> </button> <button data-template-id="iqra-3-button" class="canva-button level-button bg-[#4cace6] text-white" type="button" data-level="3" aria-controls="iqra-3-message"> <span class="button-number">3</span><span data-template-id="iqra-3-label" class="button-label"></span> </button> <button data-template-id="iqra-4-button" class="canva-button level-button bg-[#57b96a] text-white" type="button" data-level="4" aria-disabled="true"> <span class="button-number">4</span><span data-template-id="iqra-4-label" class="button-label">Akan datang</span> </button> <button data-template-id="iqra-5-button" class="canva-button level-button bg-[#9471d4] text-white" type="button" data-level="5" aria-disabled="true"> <span class="button-number">5</span><span data-template-id="iqra-5-label" class="button-label">Akan datang</span> </button> <button data-template-id="iqra-6-button" class="canva-button level-button bg-[#efc84a] text-[#5b5425]" type="button" data-level="6" aria-disabled="true"> <span class="button-number">6</span><span data-template-id="iqra-6-label" class="button-label">Akan datang</span> </button>
+     </nav>
+     <aside class="mt-5" aria-live="polite" aria-atomic="true">
+      <p data-template-id="iqra-1-message" id="iqra-1-message" class="canva-banner message-card bg-[#fff3d7] text-center"></p>
+      <p data-template-id="iqra-2-message" id="iqra-2-message" class="canva-banner message-card bg-[#ffe2e3] text-center" hidden></p>
+      <p data-template-id="iqra-3-message" id="iqra-3-message" class="canva-banner message-card bg-[#dff3ff] text-center" hidden></p>
+      <p data-template-id="iqra-4-message" id="iqra-4-message" class="canva-banner message-card bg-[#e2f7dc] text-center" hidden></p>
+      <p data-template-id="iqra-5-message" id="iqra-5-message" class="canva-banner message-card bg-[#eee5ff] text-center" hidden></p>
+      <p data-template-id="iqra-6-message" id="iqra-6-message" class="canva-banner message-card bg-[#fff8cf] text-center" hidden></p>
+     </aside>
+    </section>
+   </main>
+   <div class="bush bush-left" aria-hidden="true"></div>
+   <div class="bush bush-right" aria-hidden="true"></div><span class="flower flower-one" aria-hidden="true">🌼</span> <span class="flower flower-two" aria-hidden="true">🌸</span> <span class="rabbit" aria-hidden="true">🐰</span>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.lucide) window.lucide.createIcons();
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js").catch(() => {});
+      }
+
+      const buttons = document.querySelectorAll(".level-button");
+      const messages = document.querySelectorAll(".message-card");
+      buttons.forEach((button) => {
+        if (Number(button.dataset.level) > 3) {
+          button.disabled = true;
+          button.classList.add("is-upcoming");
+          button.setAttribute("aria-label", "Iqra' " + button.dataset.level + ", akan datang");
+        }
+      });
+
+      buttons.forEach((button) => { 
+        button.addEventListener("click", () => {
+          const selectedLevel = button.dataset.level;
+          const lessonLinks = {
+            "1": "https://sites.google.com/view/iqralevel1/hijaiyah",
+            "2": "https://sites.google.com/view/iqra-l2/huruf-bersambung",
+            "3": "https://sites.google.com/view/ainaziqra3/level-3-mad-asli"
+          };
+
+          if (lessonLinks[selectedLevel]) {
+            window.open(lessonLinks[selectedLevel], "_blank", "noopener,noreferrer");
+            return;
+          }
+
+          buttons.forEach((item) => {
+            const isActive = item === button;
+            item.classList.toggle("is-selected", isActive);
+            item.setAttribute("aria-pressed", String(isActive));
+          });
+
+          messages.forEach((message) => {
+            const isSelectedMessage = message.id === "iqra-" + selectedLevel + "-message";
+            message.hidden = !isSelectedMessage;
+          });
+        });
+      });
+
+      buttons[0].classList.add("is-selected");
+      buttons[0].setAttribute("aria-pressed", "true");
+      for (let index = 1; index < buttons.length; index++) {
+        buttons[index].setAttribute("aria-pressed", "false");
+      }
+    });
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('SW berdaftar!'))
+        .catch(err => console.log('Ralat SW:', err));
+    });
+  }
+</script>
+ </body>
+</html>
