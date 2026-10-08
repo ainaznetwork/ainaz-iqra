@@ -1,383 +1,599 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ms">
- <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261006-04-b082f3f","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Sarabun":"YAFdJssSnME,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#fffdf1">
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="icon-192.png">
-  <title>Asas Membaca Iqra'</title>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800&amp;family=Baloo+2:wght@600;700;800&amp;display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --ink: #24544b;
-      --garden: #79cf74;
-      --sky: #bfeeff;
-      --cream: #fffdf1;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      width: 100%;
-      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
-      margin: 0;
-      overflow-x: hidden;
-      font-family: "Alegreya Sans", sans-serif;
-      color: var(--ink);
-    }
-
-    .garden-page {
-      width: 100%;
-      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
-      position: relative;
-      isolation: isolate;
-      overflow: hidden;
-      background: linear-gradient(to bottom, #bfeeff 0%, #e0f8ff 55%, #a8df83 55%, #78c971 100%);
-    }
-
-    .garden-page::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      inset: 0;
-      opacity: .28;
-      background-image: radial-gradient(#ffffff 1.4px, transparent 1.4px);
-      background-size: 19px 19px;
-      pointer-events: none;
-    }
-
-    .main-shell {
-      width: 100%;
-      max-width: 590px;
-      margin: 0 auto;
-      padding: 25px 18px 42px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .brand-logo {
-      width: min(224px, 64vw);
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      filter: drop-shadow(0 6px 0 rgba(40, 116, 80, .14));
-      animation: floaty 3.2s ease-in-out infinite;
-    }
-
-    .slogan {
-      font-family: "Baloo 2", cursive;
-      text-shadow: 0 3px 0 rgba(255,255,255,.85);
-    }
-
-    .learning-card {
-      border: 3px solid rgba(255, 255, 255, .92);
-      border-radius: 30px;
-      box-shadow: 0 11px 0 rgba(43, 111, 62, .18), 0 18px 25px rgba(53, 126, 79, .15);
-      backdrop-filter: blur(5px);
-    }
-
-    .level-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .level-button {
-      min-height: 92px;
-      border: 0;
-      border-radius: 23px;
-      box-shadow: inset 0 2px 0 rgba(255,255,255,.55), 0 7px 0 rgba(0,0,0,.16);
-      transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
-      font-family: "Baloo 2", cursive;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .level-button::after {
-      content: "";
-      position: absolute;
-      width: 78px;
-      height: 78px;
-      border-radius: 50%;
-      background: rgba(255,255,255,.25);
-      right: -25px;
-      top: -28px;
-    }
-
-    .level-button:hover,
-    .level-button:focus-visible {
-      transform: translateY(-5px) rotate(-1deg);
-      filter: brightness(1.05);
-      outline: 4px solid #ffffff;
-      outline-offset: 3px;
-    }
-
-    .level-button:disabled {
-      cursor: not-allowed;
-      filter: saturate(.62);
-      opacity: .78;
-    }
-
-    .level-button:active,
-    .level-button.is-selected {
-      transform: translateY(5px);
-      box-shadow: inset 0 2px 0 rgba(0,0,0,.08), 0 2px 0 rgba(0,0,0,.16);
-    }
-
-    .level-button.is-selected {
-      outline: 4px solid #fff9b4;
-      outline-offset: 2px;
-    }
-
-    .button-number {
-      width: 31px;
-      height: 31px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(255,255,255,.92);
-      color: #27624f;
-      border-radius: 50%;
-      font-size: 1rem;
-      font-weight: 800;
-      margin-bottom: 2px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .button-label {
-      display: block;
-      position: relative;
-      z-index: 1;
-      line-height: 1;
-    }
-
-    .message-card {
-      border: 2px dashed rgba(55, 122, 78, .3);
-      border-radius: 19px;
-      min-height: 62px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 16px;
-      animation: pop-in .3s ease both;
-    }
-
-    .message-card[hidden] { display: none; }
-
-    .sun {
-      position: absolute;
-      width: 76px;
-      height: 76px;
-      top: 19px;
-      right: max(3%, calc((100% - 650px) / 2));
-      border-radius: 50%;
-      background: #ffd95a;
-      border: 4px solid #ffca3f;
-      box-shadow: 0 0 0 9px rgba(255, 227, 112, .34);
-      z-index: 0;
-    }
-
-    .sun::before, .sun::after {
-      content: "";
-      position: absolute;
-      height: 6px;
-      width: 6px;
-      background: #a66535;
-      border-radius: 50%;
-      top: 28px;
-    }
-
-    .sun::before { left: 20px; }
-    .sun::after { right: 20px; }
-
-    .sun-smile {
-      position: absolute;
-      left: 27px;
-      top: 39px;
-      width: 18px;
-      height: 9px;
-      border-bottom: 3px solid #a66535;
-      border-radius: 0 0 20px 20px;
-    }
-
-    .cloud {
-      position: absolute;
-      border-radius: 50px;
-      background: rgba(255,255,255,.9);
-      height: 20px;
-      width: 68px;
-      z-index: 0;
-      animation: drift 11s ease-in-out infinite alternate;
-    }
-
-    .cloud::before, .cloud::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      background: inherit;
-      border-radius: 50%;
-    }
-
-    .cloud::before { width: 30px; height: 30px; left: 12px; }
-    .cloud::after { width: 23px; height: 23px; left: 36px; }
-
-    .cloud-one { left: 6%; top: 115px; }
-    .cloud-two { right: 8%; top: 203px; transform: scale(.72); animation-delay: -5s; }
-
-    .bush {
-      position: absolute;
-      bottom: 0;
-      width: 170px;
-      height: 100px;
-      border-radius: 100% 100% 0 0;
-      background: #59b866;
-      z-index: 1;
-    }
-
-    .bush-left { left: -60px; }
-    .bush-right { right: -70px; background: #67bd67; }
-
-    .flower {
-      position: absolute;
-      z-index: 1;
-      bottom: 23px;
-      font-size: 2rem;
-      filter: drop-shadow(0 2px 0 rgba(53,112,58,.13));
-    }
-
-    .flower-one { left: 8%; }
-    .flower-two { right: 8%; bottom: 48px; font-size: 1.65rem; }
-    .bird { position: absolute; top: 160px; left: 10%; color: #5087bd; z-index: 1; transform: rotate(-8deg); }
-    .rabbit { position: absolute; right: 7%; bottom: 20px; z-index: 2; font-size: 2.7rem; transform: rotate(-5deg); }
-
-    @keyframes floaty {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-7px); }
-    }
-
-    @keyframes drift {
-      from { transform: translateX(-8px); }
-      to { transform: translateX(14px); }
-    }
-
-    @keyframes pop-in {
-      from { opacity: 0; transform: scale(.92) translateY(6px); }
-      to { opacity: 1; transform: scale(1) translateY(0); }
-    }
-
-    @media (min-width: 540px) {
-      .main-shell { padding-top: 32px; }
-      .level-grid { gap: 17px; }
-      .level-button { min-height: 102px; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: .01ms !important;
-      }
-    }
-  </style>
-  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="icon-192.png">
-  <meta name="theme-color" content="#ffffff">
- </head>
- <body data-template-id="__page-root">
-  <div class="garden-page">
-   <div class="sun" aria-hidden="true"><span class="sun-smile"></span>
-   </div>
-   <div class="cloud cloud-one" aria-hidden="true"></div>
-   <div class="cloud cloud-two" aria-hidden="true"></div><i class="bird" data-lucide="bird" aria-hidden="true"></i>
-   <main class="main-shell" aria-labelledby="page-slogan">
-    <header class="text-center mb-6">
-     <img data-template-id="main-logo" loading="lazy" class="canva-image brand-logo">
-     <h1 data-template-id="page-slogan" id="page-slogan" class="canva-text slogan mt-2"></h1>
-    </header>
-    <section data-template-id="level-panel" class="canva-panel learning-card bg-[#fffdf1e8] p-5 sm:p-6" aria-labelledby="level-heading">
-     <div class="text-center mb-5">
-      <h2 data-template-id="level-heading" id="level-heading" class="canva-text slogan"></h2>
-      <p data-template-id="helper-text" class="canva-text mt-1 font-medium"></p>
-     </div>
-     <nav class="level-grid" aria-label="Pilihan tahap Iqra">
-      <button data-template-id="iqra-1-button" class="canva-button level-button bg-[#ff9a53] text-white" type="button" data-level="1" aria-controls="iqra-1-message"> <span class="button-number">1</span><span class="button-label" data-template-id="iqra-button-label"></span> </button> <button data-template-id="iqra-2-button" class="canva-button level-button bg-[#f46973] text-white" type="button" data-level="2" aria-controls="iqra-2-message"> <span class="button-number">2</span><span data-template-id="iqra-2-label" class="button-label"></span> </button> <button data-template-id="iqra-3-button" class="canva-button level-button bg-[#4cace6] text-white" type="button" data-level="3" aria-controls="iqra-3-message"> <span class="button-number">3</span><span data-template-id="iqra-3-label" class="button-label"></span> </button> <button data-template-id="iqra-4-button" class="canva-button level-button bg-[#57b96a] text-white" type="button" data-level="4" aria-disabled="true"> <span class="button-number">4</span><span data-template-id="iqra-4-label" class="button-label">Akan datang</span> </button> <button data-template-id="iqra-5-button" class="canva-button level-button bg-[#9471d4] text-white" type="button" data-level="5" aria-disabled="true"> <span class="button-number">5</span><span data-template-id="iqra-5-label" class="button-label">Akan datang</span> </button> <button data-template-id="iqra-6-button" class="canva-button level-button bg-[#efc84a] text-[#5b5425]" type="button" data-level="6" aria-disabled="true"> <span class="button-number">6</span><span data-template-id="iqra-6-label" class="button-label">Akan datang</span> </button>
-     </nav>
-     <aside class="mt-5" aria-live="polite" aria-atomic="true">
-      <p data-template-id="iqra-1-message" id="iqra-1-message" class="canva-banner message-card bg-[#fff3d7] text-center"></p>
-      <p data-template-id="iqra-2-message" id="iqra-2-message" class="canva-banner message-card bg-[#ffe2e3] text-center" hidden></p>
-      <p data-template-id="iqra-3-message" id="iqra-3-message" class="canva-banner message-card bg-[#dff3ff] text-center" hidden></p>
-      <p data-template-id="iqra-4-message" id="iqra-4-message" class="canva-banner message-card bg-[#e2f7dc] text-center" hidden></p>
-      <p data-template-id="iqra-5-message" id="iqra-5-message" class="canva-banner message-card bg-[#eee5ff] text-center" hidden></p>
-      <p data-template-id="iqra-6-message" id="iqra-6-message" class="canva-banner message-card bg-[#fff8cf] text-center" hidden></p>
-     </aside>
-    </section>
-   </main>
-   <div class="bush bush-left" aria-hidden="true"></div>
-   <div class="bush bush-right" aria-hidden="true"></div><span class="flower flower-one" aria-hidden="true">🌼</span> <span class="flower flower-two" aria-hidden="true">🌸</span> <span class="rabbit" aria-hidden="true">🐰</span>
-  </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      if (window.lucide) window.lucide.createIcons();
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("sw.js").catch(() => {});
-      }
-
-      const buttons = document.querySelectorAll(".level-button");
-      const messages = document.querySelectorAll(".message-card");
-      buttons.forEach((button) => {
-        if (Number(button.dataset.level) > 3) {
-          button.disabled = true;
-          button.classList.add("is-upcoming");
-          button.setAttribute("aria-label", "Iqra' " + button.dataset.level + ", akan datang");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Asas Membaca Iqra' - Taman Pembelajaran Ceria</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts for Kids Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Mali:wght@500;700&family=Scheherazade+New:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Font Definitions */
+        body {
+            font-family: 'Fredoka', 'Mali', sans-serif;
+            background-color: #87CEEB;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            overflow-x: hidden;
         }
-      });
+        .arabic-text {
+            font-family: 'Scheherazade New', serif;
+        }
+        /* 3D Kid Button Utilities */
+        .btn-3d {
+            transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+            box-shadow: 0 10px 0 0 rgba(0,0,0,0.15), 0 15px 20px rgba(0,0,0,0.1);
+        }
+        .btn-3d:hover {
+            transform: translateY(-4px) scale(1.02);
+        }
+        .btn-3d:active {
+            transform: translateY(6px) scale(0.98);
+            box-shadow: 0 4px 0 0 rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.1);
+        }
+        /* Keyframe Animations */
+        @keyframes float-slow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(2deg); }
+        }
+        @keyframes float-cloud {
+            0% { transform: translateX(-120%); }
+            100% { transform: translateX(380%); }
+        }
+        @keyframes sun-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes bounce-gentle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        @keyframes sway {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+        @keyframes pulse-glow {
+            0%, 100% { filter: drop-shadow(0 0 8px rgba(255, 235, 59, 0.8)); }
+            50% { filter: drop-shadow(0 0 20px rgba(255, 235, 59, 1)); }
+        }
+        @keyframes sparkle-anim {
+            0% { opacity: 0; transform: scale(0) rotate(0deg); }
+            50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
+            100% { opacity: 0; transform: scale(0) rotate(360deg); }
+        }
+        .animate-float { animation: float-slow 4s ease-in-out infinite; }
+        .animate-bounce-kids { animation: bounce-gentle 2s infinite; }
+        .animate-sway { animation: sway 3s ease-in-out infinite; transform-origin: bottom center; }
+        .animate-sun-rays { animation: sun-spin 20s linear infinite; }
+        .animate-glow { animation: pulse-glow 2s infinite; }
+        .cloud-1 { animation: float-cloud 35s linear infinite; }
+        .cloud-2 { animation: float-cloud 25s linear infinite 10s; }
+        .cloud-3 { animation: float-cloud 40s linear infinite 5s; }
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #fbbf24;
+            border-radius: 10px;
+        }
+        /* Sparkle Particle Styling */
+        .sparkle-particle {
+            position: absolute;
+            pointer-events: none;
+            animation: sparkle-anim 0.8s forwards;
+            color: #facc15;
+            font-size: 1.2rem;
+        }
+    </style>
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#7C3AED">
+    <link rel="apple-touch-icon" href="./icon-192.png">
+</head>
+<body class="bg-sky-300 min-h-screen flex justify-center items-center p-0 md:p-4 selection:bg-pink-300 selection:text-pink-900">
+    <!-- Mobile Outer Container Mockup -->
+    <div id="appContainer" class="relative w-full max-w-md min-h-screen md:min-h-[844px] md:h-[844px] bg-gradient-to-b from-sky-300 via-sky-200 to-emerald-100 md:rounded-[40px] shadow-2xl overflow-hidden flex flex-col justify-between border-0 md:border-[8px] border-amber-200">
+        <!-- Dynamic Animated Sky Elements -->
+        <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+            <!-- Glowing Sun -->
+            <div class="absolute top-4 right-4 z-10 cursor-pointer pointer-events-auto group" onclick="playSunSound(event)" title="Klik Matahari!">
+                <div class="relative w-20 h-20 flex items-center justify-center">
+                    <!-- Sun Rays -->
+                    <svg class="absolute inset-0 w-full h-full text-amber-300 animate-sun-rays" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="6" stroke-dasharray="10 8" />
+                    </svg>
+                    <!-- Sun Sphere -->
+                    <div class="w-14 h-14 bg-gradient-to-tr from-amber-400 to-yellow-300 rounded-full shadow-lg transform group-hover:scale-110 transition-transform"></div>
+                </div>
+            </div>
+            <!-- Floating Clouds -->
+            <div class="cloud-1 absolute top-6 -left-20 text-white opacity-90">
+                <i class="fa-solid fa-cloud text-5xl filter drop-shadow-md"></i>
+            </div>
+            <div class="cloud-2 absolute top-16 -left-20 text-white opacity-80 scale-75">
+                <i class="fa-solid fa-cloud text-6xl filter drop-shadow-md"></i>
+            </div>
+            <div class="cloud-3 absolute top-28 -left-20 text-white opacity-85 scale-90">
+                <i class="fa-solid fa-cloud text-4xl filter drop-shadow-md"></i>
+            </div>
+            <!-- Rainbow Arc in background -->
+            <div class="absolute -top-10 -left-10 w-64 h-64 border-[16px] border-pink-300/40 rounded-full border-t-yellow-300/40 border-r-emerald-300/40 pointer-events-none"></div>
+        </div>
+        
+        <!-- Top App Bar & Header Area -->
+        <header class="relative z-10 pt-6 px-4 pb-2 flex flex-col items-center text-center">
+            
+            <!-- Butang Kawalan Muzik Tenang (Bahagian Atas) -->
+            <div class="w-full flex justify-start items-center mb-2 px-2 z-20">
+                <button onclick="toggleBgmManual()" id="bgmBtn" class="bg-emerald-500/90 hover:bg-emerald-600 text-white text-[11px] font-bold px-3 py-1.5 rounded-full shadow-md border-2 border-white flex items-center gap-1.5 transition active:scale-95">
+                    <i class="fa-solid fa-music animate-pulse" id="bgmIcon"></i>
+                    <span id="bgmBtnText">Muzik Tenang: ON</span>
+                </button>
+            </div>
 
-      buttons.forEach((button) => { 
-        button.addEventListener("click", () => {
-          const selectedLevel = button.dataset.level;
-          const lessonLinks = {
-            "1": "https://sites.google.com/view/iqralevel1/hijaiyah",
-            "2": "https://sites.google.com/view/iqra-l2/huruf-bersambung",
-            "3": "https://sites.google.com/view/ainaziqra3/level-3-mad-asli"
-          };
+            <!-- Logo Utama Container -->
+            <div class="relative group cursor-pointer my-2 flex items-center justify-center" onclick="playLogoSound()">
+                <img 
+                    src="https://i.ibb.co/bg3h7VhR/Ainaz-Iqra.png" 
+                    alt="Logo Ainaz Iqra'" 
+                    class="h-28 max-w-[260px] object-contain transform group-hover:scale-105 transition-transform duration-300 filter drop-shadow-lg"
+                    onerror="this.onerror=null; this.src='https://placehold.co/240x100/fef3c7/d97706?text=Ainaz+Iqra%27';"
+                >
+            </div>
 
-          if (lessonLinks[selectedLevel]) {
-            window.open(lessonLinks[selectedLevel], "_blank", "noopener,noreferrer");
-            return;
-          }
+            <!-- Slogan & Sub-tajuk -->
+            <div class="mt-2 bg-white/85 backdrop-blur-md px-5 py-1.5 rounded-full shadow-md border-2 border-amber-300">
+                <h1 class="text-xl md:text-2xl font-black text-amber-700 tracking-wide flex items-center gap-2">
+                    <i class="fa-solid fa-book-open text-emerald-500 animate-pulse"></i>
+                    Jom Belajar Asas Iqra'
+                    <i class="fa-solid fa-sparkles text-yellow-500"></i>
+                </h1>
+            </div>
+            
+            <p class="text-xs font-bold text-sky-900 mt-1 bg-sky-100/80 px-3 py-0.5 rounded-full">
+                Taman Pembelajaran Al-Quran Kanak-Kanak
+            </p>
+        </header>
 
-          buttons.forEach((item) => {
-            const isActive = item === button;
-            item.classList.toggle("is-selected", isActive);
-            item.setAttribute("aria-pressed", String(isActive));
-          });
+        <!-- Main Content Area -->
+        <main class="relative z-10 flex-1 px-4 py-2 flex flex-col justify-between">
 
-          messages.forEach((message) => {
-            const isSelectedMessage = message.id === "iqra-" + selectedLevel + "-message";
-            message.hidden = !isSelectedMessage;
-          });
-        });
-      });
+            <!-- Iqra' Interactive Level Buttons Grid (2x3 Grid layout) -->
+            <div class="grid grid-cols-2 gap-3.5 my-auto">
+                <!-- Iqra 1 Button Card -->
+                <button 
+                    onclick="handleIqraClick(1)" 
+                    class="btn-3d relative bg-gradient-to-b from-orange-400 to-amber-500 border-4 border-amber-200 rounded-2xl p-3 text-white flex flex-col items-center justify-center group overflow-hidden"
+                >
+                    <div class="absolute top-1 right-2 bg-amber-600/40 text-[10px] px-2 py-0.5 rounded-full font-bold">Tahap 1</div>
+                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-1 group-hover:scale-110 transition-transform">
+                        <span class="arabic-text text-3xl font-bold text-yellow-100">أَ</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-wider drop-shadow-md">Iqra' 1</span>
+                    <span class="text-[10px] font-semibold text-amber-100 bg-amber-700/40 px-2 py-0.5 rounded-md mt-1">Huruf Asas Baris 1</span>
+                </button>
 
-      buttons[0].classList.add("is-selected");
-      buttons[0].setAttribute("aria-pressed", "true");
-      for (let index = 1; index < buttons.length; index++) {
-        buttons[index].setAttribute("aria-pressed", "false");
-      }
-    });
-  <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js')
-        .then(reg => console.log('SW berdaftar!'))
-        .catch(err => console.log('Ralat SW:', err));
-    });
-  }
-</script>
- </body>
+                <!-- Iqra 2 Button Card -->
+                <button 
+                    onclick="handleIqraClick(2)" 
+                    class="btn-3d relative bg-gradient-to-b from-rose-400 to-red-500 border-4 border-rose-200 rounded-2xl p-3 text-white flex flex-col items-center justify-center group overflow-hidden"
+                >
+                    <div class="absolute top-1 right-2 bg-red-700/40 text-[10px] px-2 py-0.5 rounded-full font-bold">Tahap 2</div>
+                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-1 group-hover:scale-110 transition-transform">
+                        <span class="arabic-text text-3xl font-bold text-rose-100">بـتـث</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-wider drop-shadow-md">Iqra' 2</span>
+                    <span class="text-[10px] font-semibold text-rose-100 bg-rose-800/40 px-2 py-0.5 rounded-md mt-1">Huruf Bersambung</span>
+                </button>
+
+                <!-- Iqra 3 Button Card -->
+                <button 
+                    onclick="handleIqraClick(3)" 
+                    class="btn-3d relative bg-gradient-to-b from-sky-400 to-blue-600 border-4 border-sky-200 rounded-2xl p-3 text-white flex flex-col items-center justify-center group overflow-hidden"
+                >
+                    <div class="absolute top-1 right-2 bg-blue-800/40 text-[10px] px-2 py-0.5 rounded-full font-bold">Tahap 3</div>
+                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-1 group-hover:scale-110 transition-transform">
+                        <span class="arabic-text text-3xl font-bold text-sky-100">بَا</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-wider drop-shadow-md">Iqra' 3</span>
+                    <span class="text-[10px] font-semibold text-sky-100 bg-blue-900/40 px-2 py-0.5 rounded-md mt-1">Bacaan Mad Asli</span>
+                </button>
+
+                <!-- Iqra 4 Button Card -->
+                <button 
+                    onclick="handleIqraClick(4)" 
+                    class="btn-3d relative bg-gradient-to-b from-emerald-400 to-green-600 border-4 border-emerald-200 rounded-2xl p-3 text-white flex flex-col items-center justify-center group overflow-hidden"
+                >
+                    <div class="absolute top-1 right-2 bg-green-800/40 text-[10px] px-2 py-0.5 rounded-full font-bold">Tahap 4</div>
+                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-1 group-hover:scale-110 transition-transform">
+                        <span class="arabic-text text-3xl font-bold text-emerald-100">أَبْ</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-wider drop-shadow-md">Iqra' 4</span>
+                    <span class="text-[10px] font-semibold text-emerald-100 bg-emerald-900/40 px-2 py-0.5 rounded-md mt-1">Bacaan Sukun</span>
+                </button>
+
+                <!-- Iqra 5 Button Card -->
+                <button 
+                    onclick="handleIqraClick(5)" 
+                    class="btn-3d relative bg-gradient-to-b from-purple-400 to-indigo-600 border-4 border-purple-200 rounded-2xl p-3 text-white flex flex-col items-center justify-center group overflow-hidden"
+                >
+                    <div class="absolute top-1 right-2 bg-purple-900/40 text-[10px] px-2 py-0.5 rounded-full font-bold">Tahap 5</div>
+                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-1 group-hover:scale-110 transition-transform">
+                        <span class="arabic-text text-3xl font-bold text-purple-100">أَبَّ</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-wider drop-shadow-md">Iqra' 5</span>
+                    <span class="text-[10px] font-semibold text-purple-100 bg-purple-950/40 px-2 py-0.5 rounded-md mt-1">Bacaan Syaddah</span>
+                </button>
+
+                <!-- Iqra 6 Button Card -->
+                <button 
+                    onclick="handleIqraClick(6)" 
+                    class="btn-3d relative bg-gradient-to-b from-amber-400 to-yellow-600 border-4 border-yellow-100 rounded-2xl p-3 text-white flex flex-col items-center justify-center group overflow-hidden"
+                >
+                    <div class="absolute top-1 right-2 bg-yellow-900/40 text-[10px] px-2 py-0.5 rounded-full font-bold">Tahap 6</div>
+                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-1 group-hover:scale-110 transition-transform">
+                        <span class="arabic-text text-3xl font-bold text-amber-100">بً</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-wider drop-shadow-md">Iqra' 6</span>
+                    <span class="text-[10px] font-semibold text-amber-100 bg-amber-950/40 px-2 py-0.5 rounded-md mt-1">Bacaan Tanwin</span>
+                </button>
+            </div>
+        </main>
+
+        <!-- Garden Ground Footer Area -->
+        <footer class="relative z-10 w-full pt-4 pb-3 bg-gradient-to-b from-emerald-400 via-emerald-500 to-green-600 border-t-4 border-lime-300 flex flex-col items-center justify-end rounded-b-[32px]">
+            
+            <!-- Garden Decorative Plants & Animals Row -->
+            <div class="absolute -top-7 left-0 right-0 flex justify-between items-end px-4 pointer-events-none">
+                <!-- Swaying Flowers Left -->
+                <div class="flex items-end gap-1 animate-sway">
+                    <span class="text-2xl filter drop-shadow">🌸</span>
+                    <span class="text-3xl filter drop-shadow">🌼</span>
+                    <span class="text-xl filter drop-shadow">🌷</span>
+                </div>
+                <!-- Sitting Cartoon Bunny Right -->
+                <div class="pointer-events-auto cursor-pointer animate-bounce-kids group" onclick="playBunnyHop()" title="Arnab Taman">
+                    <div class="relative">
+                        <span class="text-4xl filter drop-shadow group-hover:scale-125 transition-transform">🐇</span>
+                        <div class="absolute -top-4 -left-2 bg-yellow-200 text-amber-900 text-[9px] font-bold px-1.5 py-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                            Boing!
+                        </div>
+                    </div>
+                </div>
+                <!-- Swaying Flowers Right -->
+                <div class="flex items-end gap-1 animate-sway">
+                    <span class="text-xl filter drop-shadow">🌻</span>
+                    <span class="text-3xl filter drop-shadow">🌸</span>
+                    <span class="text-2xl filter drop-shadow">🌺</span>
+                </div>
+            </div>
+
+            <!-- Garden Footer Copyright & Tag -->
+            <div class="text-center text-white text-[11px] font-bold tracking-wide pt-1">
+                <p class="flex items-center justify-center gap-1">
+                    <span>❤️ Direka Khas Untuk Anak-Anak Bijak Iqra'</span>
+                </p>
+                <p class="text-emerald-100 text-[10px] font-medium opacity-90">
+                    © Ainaz Iqra' - Asas Membaca Al-Quran
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Parent / Info Modal -->
+    <div id="parentModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border-4 border-sky-400 rounded-3xl w-full max-w-sm p-5 shadow-2xl relative">
+            <button onclick="closeParentModal()" class="absolute -top-3 -right-3 bg-red-500 text-white w-8 h-8 rounded-full font-bold border-2 border-white shadow flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="text-center mb-3">
+                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center mx-auto mb-1 text-2xl">
+                    <i class="fa-solid fa-hands-holding-child"></i>
+                </div>
+                <h3 class="text-lg font-extrabold text-sky-900">Panduan Ibu Bapa & Guru</h3>
+                <p class="text-xs text-sky-600 font-medium">Aplikasi Pembelajaran Iqra' Interaktif</p>
+            </div>
+
+            <div class="space-y-2.5 text-xs text-slate-700 font-medium">
+                <div class="p-2.5 bg-sky-50 rounded-xl border border-sky-200">
+                    <strong class="text-sky-900 block mb-0.5"><i class="fa-solid fa-bullseye text-sky-500"></i> Objektif Utama:</strong>
+                    Memudahkan kanak-kanak mengenali huruf Hijaiyah dan tanda bacaan Iqra' dengan kaedah didik hibur (edutainment).
+                </div>
+                <div class="p-2.5 bg-amber-50 rounded-xl border border-amber-200">
+                    <strong class="text-amber-900 block mb-0.5"><i class="fa-solid fa-star text-amber-500"></i> Sistem Bintang:</strong>
+                    Anak-anak akan dikurniakan bintang setiap kali menekan butang sebutan dan menyelesaikan modul Iqra'.
+                </div>
+                <div class="p-2.5 bg-emerald-50 rounded-xl border border-emerald-200">
+                    <strong class="text-emerald-900 block mb-0.5"><i class="fa-solid fa-volume-high text-emerald-500"></i> Sokongan Audio:</strong>
+                    Gunakan audio sintesis terbina untuk panduan sebutan huruf yang jelas.
+                </div>
+            </div>
+
+            <button onclick="closeParentModal()" class="w-full mt-4 bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 rounded-xl text-xs shadow transition">
+                Tutup Panduan
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let audioCtx = null;
+        let isBgmPlaying = false;
+        let bgmSequenceIndex = 0;
+        let bgmTimer = null;
+        let isSpeaking = false;
+
+        const bgmNotes = [261.63, 293.66, 329.63, 392.00, 440.00, 523.25, 440.00, 392.00, 329.63, 293.66];
+        
+        // Pautan Google Sites rasmi untuk setiap tahap Iqra'
+        const iqraLinks = {
+            1: "https://sites.google.com/view/iqralevel1/hijaiyah",
+            2: "https://sites.google.com/view/iqra-l2/huruf-bersambung",
+            3: "https://sites.google.com/view/ainaziqra3/level-3-mad-asli",
+            4: "https://sites.google.com/view/ainaziqra4/bacaan-sukun",
+            5: "https://sites.google.com/view/ainaz-iqra-5/bacaan-syaddah",
+            6: "https://sites.google.com/view/ainaziqra6/bacaan-tanwin"
+        };
+
+        function initAudio() {
+            if (!audioCtx) {
+                const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                if (AudioContextClass) {
+                    audioCtx = new AudioContextClass();
+                }
+            }
+            if (audioCtx && audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+        }
+
+        function openParentModal() {
+            playPopSound();
+            const modal = document.getElementById('parentModal');
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeParentModal() {
+            playPopSound();
+            const modal = document.getElementById('parentModal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.onvoiceschanged = () => {
+                window.speechSynthesis.getVoices();
+            };
+        }
+
+        function startBgm() {
+            if (isBgmPlaying) return;
+            initAudio();
+            isBgmPlaying = true;
+            playNextBgmNote();
+            updateBgmButtonUI();
+        }
+
+        function playNextBgmNote() {
+            if (!isBgmPlaying || !audioCtx) return;
+            
+            try {
+                const freq = bgmNotes[bgmSequenceIndex % bgmNotes.length];
+                bgmSequenceIndex++;
+                
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                
+                const now = audioCtx.currentTime;
+                const duration = 1.8;
+                
+                gain.gain.setValueAtTime(0.001, now);
+                gain.gain.linearRampToValueAtTime(0.025, now + 0.3);
+                gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+                
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                
+                osc.start(now);
+                osc.stop(now + duration);
+            } catch (e) {
+                console.log("Muzik BGM:", e);
+            }
+            
+            bgmTimer = setTimeout(playNextBgmNote, 1200);
+        }
+
+        function toggleBgmManual() {
+            if (isBgmPlaying) {
+                isBgmPlaying = false;
+                if (bgmTimer) clearTimeout(bgmTimer);
+            } else {
+                startBgm();
+            }
+            updateBgmButtonUI();
+        }
+
+        function updateBgmButtonUI() {
+            const btnText = document.getElementById('bgmBtnText');
+            const btnIcon = document.getElementById('bgmIcon');
+            const btn = document.getElementById('bgmBtn');
+            if (btnText && btnIcon && btn) {
+                if (isBgmPlaying) {
+                    btnText.innerText = "Muzik Tenang: ON";
+                    btnIcon.className = "fa-solid fa-music animate-pulse";
+                    btn.className = "bg-emerald-500/90 hover:bg-emerald-600 text-white text-[11px] font-bold px-3 py-1.5 rounded-full shadow-md border-2 border-white flex items-center gap-1.5 transition active:scale-95";
+                } else {
+                    btnText.innerText = "Muzik Tenang: OFF";
+                    btnIcon.className = "fa-solid fa-volume-xmark";
+                    btn.className = "bg-slate-400/90 hover:bg-slate-500 text-white text-[11px] font-bold px-3 py-1.5 rounded-full shadow-md border-2 border-white flex items-center gap-1.5 transition active:scale-95";
+                }
+            }
+        }
+
+        function handleIqraClick(level) {
+            startBgm();
+            playPopSound();
+            
+            const targetUrl = iqraLinks[level];
+            if (targetUrl) {
+                // Membuka pautan dalam tab baru atau navigasi terus secara lancar
+                setTimeout(() => {
+                    const opened = window.open(targetUrl, '_blank');
+                    if (!opened) {
+                        window.location.href = targetUrl;
+                    }
+                }, 200);
+            } else {
+                openIqraModal(level);
+            }
+        }
+
+        function playTone(freq, type, duration, gainVal = 0.1) {
+            try {
+                initAudio();
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                
+                gain.gain.setValueAtTime(gainVal, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
+                
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                
+                osc.start();
+                osc.stop(audioCtx.currentTime + duration);
+            } catch (e) {
+                console.log("Audio error", e);
+            }
+        }
+
+        function playPopSound() {
+            playTone(400, 'sine', 0.15, 0.2);
+            setTimeout(() => playTone(800, 'sine', 0.2, 0.25), 50);
+        }
+
+        function playSunSound(evt) {
+            startBgm();
+            playTone(523.25, 'triangle', 0.15, 0.2);
+            setTimeout(() => playTone(659.25, 'triangle', 0.15, 0.2), 100);
+            setTimeout(() => playTone(783.99, 'triangle', 0.25, 0.2), 200);
+            const clickX = (evt && evt.clientX) ? evt.clientX : window.innerWidth / 2;
+            const clickY = (evt && evt.clientY) ? evt.clientY : 100;
+            spawnSparkles(clickX, clickY);
+            updateMascot("Matahari tersenyum! Hari yang cerah untuk belajar Iqra'!");
+        }
+
+        function spawnSparkles(x, y) {
+            const container = document.getElementById('appContainer') || document.body;
+            for (let i = 0; i < 6; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'sparkle-particle fa-solid fa-star';
+                const offsetX = (Math.random() - 0.5) * 80;
+                const offsetY = (Math.random() - 0.5) * 80;
+                particle.style.left = `${x + offsetX}px`;
+                particle.style.top = `${y + offsetY}px`;
+                container.appendChild(particle);
+                setTimeout(() => particle.remove(), 800);
+            }
+        }
+
+        function playBunnyHop() {
+            startBgm();
+            playTone(300, 'sine', 0.1, 0.3);
+            setTimeout(() => playTone(600, 'sine', 0.2, 0.3), 80);
+            updateMascot("Boing! Arnab gembira kamu makin pandai!");
+        }
+
+        function playLogoSound() {
+            startBgm();
+            playTone(587.33, 'sine', 0.15, 0.2);
+            setTimeout(() => playTone(880, 'sine', 0.3, 0.2), 120);
+            updateMascot("Selamat datang ke Ainaz Iqra'! Mari mengaji bersama!");
+        }
+
+        function playMascotVoice() {
+            startBgm();
+            const quotes = [
+                "Assalamualaikum kawan-kawan! Jom belajar membaca Iqra' bersama Ustaz!",
+                "Hebatnya kawan-kawan! Teruskan membaca, Allah pasti sayang!",
+                "Belajar Iqra' itu sangat mudah dan menyeronokkan!",
+                "Satu huruf yang kita baca akan mendapat pahala kebaikan!",
+                "MasyaAllah, pandainya kawan-kawan menyebut huruf ini!"
+            ];
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            updateMascot(randomQuote);
+            playTone(440, 'triangle', 0.2, 0.2);
+            speakMalayFallback(randomQuote);
+        }
+
+        function updateMascot(msg) {
+            const mascotEl = document.getElementById('mascotMessage');
+            if (mascotEl) {
+                mascotEl.innerText = `"${msg}"`;
+            }
+        }
+
+        function speakMalayFallback(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                
+                const voices = window.speechSynthesis.getVoices();
+                const malayVoice = voices.find(v => 
+                    v.lang.toLowerCase().includes('ms') || 
+                    v.lang.toLowerCase().includes('id') ||
+                    v.name.toLowerCase().includes('malay') ||
+                    v.name.toLowerCase().includes('indonesia')
+                );
+                if (malayVoice) {
+                    utterance.voice = malayVoice;
+                    utterance.lang = malayVoice.lang;
+                } else {
+                    utterance.lang = 'ms-MY';
+                }
+                utterance.rate = 0.82; 
+                utterance.pitch = 1.15; 
+                utterance.onend = () => setMascotSpeakingUI(false);
+                utterance.onerror = () => setMascotSpeakingUI(false);
+                setMascotSpeakingUI(true);
+                window.speechSynthesis.speak(utterance);
+            } else {
+                setMascotSpeakingUI(false);
+            }
+        }
+
+        function setMascotSpeakingUI(speaking) {
+            isSpeaking = speaking;
+            const avatar = document.getElementById('mascotAvatar');
+            const badge = document.getElementById('speakingBadge');
+            if (avatar && badge) {
+                if (speaking) {
+                    avatar.classList.add('ring-4', 'ring-amber-400', 'scale-110');
+                    badge.classList.remove('hidden');
+                } else {
+                    avatar.classList.remove('ring-4', 'ring-amber-400', 'scale-110');
+                    badge.classList.add('hidden');
+                }
+            }
+        }
+    </script>
+</body>
 </html>
